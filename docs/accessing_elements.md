@@ -17,31 +17,31 @@ Filters are strings that describe which objects you want from the query. The ast
 
 Here are some examples of filters:
 
-1. Get all network objects (including types)
+a) Get all network objects (including types)
 
 ```python
 all_objs = app.GetCalcRelevantObjects('*')
 ```
 
-2. Get all line elements
+b) Get all line elements
 
 ```python
 lines = app.GetCalcRelevantObjects('*.ElmLne')
 ```
 
-3. Get lines with a name starting with '86'
+c) Get lines with a name starting with '86'
 
 ```python
 lines = app.GetCalcRelevantObjects('86*.ElmLne')
 ```
 
-4. Get the specific line with name 'line_3a'
+d) Get the specific line with name 'line_3a'
 
 ```python
 line_3a = app.GetCalcRelevantObjects('line_3a.ElmLne')
 ```
 
-5. Get all line types (that are being used, i.e. does not include unused types in the library)
+e) Get all line types (that are being used, i.e. does not include unused types in the library)
 
 ```python
 line_types = app.GetCalcRelevantObjects('*.TypLne') 
