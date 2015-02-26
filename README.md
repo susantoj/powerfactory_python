@@ -1,2 +1,3 @@
-# powerfactory_python
+# Python for PowerFactory
+
 Python scripting for PowerFactory
