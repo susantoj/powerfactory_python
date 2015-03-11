@@ -20,7 +20,7 @@ shc = app.GetFromStudyCase('ComShc')
 
 # Set up short circuit calculation
 shc.iopt_mde = 1    # IEC fault mode
-iopt_allbus = 2     # All busbars
+shc.iopt_allbus = 2     # All busbars
 
 # Run short circuit calculation
 ierr = shc.Execute()
